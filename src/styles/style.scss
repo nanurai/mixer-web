@@ -1,0 +1,94 @@
+html {
+  background-color: #312F4D;
+}
+
+.button.is-fullwidth {
+  min-height: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.field > label {
+  font-weight: 400;
+}
+
+.image.is-circular {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navbar {
+  margin-bottom: 60px;
+}
+
+.input input:active,
+.input input:focus {
+  border-color: $green;
+  box-shadow: none;
+}
+
+.input {
+  box-shadow: none;
+}
+
+.is-divider {
+  border-top-width: 1px;
+  height: 1px;
+}
+
+.is-primary-faded {
+  border-color: $primary;
+  background-color: rgba($primary, 0.1);
+}
+
+.field > label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+body {
+  color: $black;
+}
+
+.select select:active,
+.select select:focus {
+  border-color: $green;
+  box-shadow: none;
+}
+
+.select:not(.is-multiple):not(.is-loading)::before {
+  content: "";
+  z-index: 4;
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-bottom: 6px solid black;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-left: 6px solid transparent;
+  top: 15%;
+  right: 17px;
+}
+.select:not(.is-multiple):not(.is-loading)::after {
+  content: "";
+  z-index: 4;
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid black;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid transparent;
+  top: 75%;
+  right: 17px;
+  transform: none;
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+  border-color: transparent;
+  border-top-color: black;
+}
+
+
