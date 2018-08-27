@@ -93,14 +93,10 @@ export default {
       this.running = true
 
       if (window.powCPU) {
-        console.log('hashy')
-        console.log(hash)
         const NUM_THREADS = 3
         const workers = window.pow_initiate(NUM_THREADS, '/static/lib/pow/')
         window.pow_callback(workers, hash, () => {
-          this.status = 'Computing Work'
         }, (data) => {
-          this.status = 'Work computed'
           this.completedWork(data, hash, block)
 
           this.running = false
